@@ -7,37 +7,45 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      background-attachment: fixed;
       margin: 0;
       padding: 0;
+      color: #333;
     }
+
     .container {
       max-width: 900px;
-      margin: 50px auto;
+      margin: 60px auto;
       padding: 2em;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     }
+
     h1, h2 {
       color: #2c3e50;
       margin-top: 0;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     li::before {
       content: "✔️ ";
     }
+
     a {
       color: #1e90ff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     .button {
       display: inline-block;
       margin-top: 20px;
@@ -47,9 +55,11 @@
       text-decoration: none;
       border-radius: 5px;
     }
+
     .button:hover {
       background-color: #005bb5;
     }
+
     .section {
       margin-top: 2em;
     }
