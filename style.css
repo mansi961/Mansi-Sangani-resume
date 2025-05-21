@@ -1,60 +1,124 @@
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  padding: 0;
+  background-color: #f9fafe;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #2196f3;
+  background-color: #0052cc;
   color: white;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
-.profile-pic {
-  width: 120px;
-  height: 120px;
+.profile-photo {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 
+h1 {
+  margin: 0.25rem 0;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
 nav {
-  background: #1976d2;
-  text-align: center;
+  margin-top: 1rem;
 }
 
-nav ul {
+.nav-tabs {
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-nav ul li {
-  display: inline-block;
-  margin: 0 15px;
+.nav-tabs li {
 }
 
-nav ul li a {
+.nav-tabs a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 15px;
-  display: inline-block;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-  background-color: #0d47a1;
+.nav-tabs a:hover,
+.nav-tabs a:focus {
+  background-color: #003d99;
 }
 
 main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: white;
   padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
 
 h2 {
-  color: #0d47a1;
+  color: #0052cc;
+  border-bottom: 2px solid #0052cc;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list,
+.projects-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li,
+.projects-list li {
+  background-color: #eef4ff;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+a {
+  color: #0052cc;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f6fb;
+  color: #555;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-tabs {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main {
+    margin: 1rem;
+    padding: 1rem;
+  }
 }
