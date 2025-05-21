@@ -2,26 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mansi Sangani – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mansi Sangani | Web Developer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-      padding: 50px;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
     }
     .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 2em;
       background: white;
-      padding: 40px;
       border-radius: 10px;
-      display: inline-block;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    h1 {
-      color: #333;
+    h1, h2 {
+      color: #2c3e50;
+      margin-top: 0;
     }
-    a.button {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li::before {
+      content: "✔️ ";
+    }
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
@@ -30,17 +47,57 @@
       text-decoration: none;
       border-radius: 5px;
     }
-    a.button:hover {
+    .button:hover {
       background-color: #005bb5;
+    }
+    .section {
+      margin-top: 2em;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Mansi Sangani</h1>
-    <p>Information Technology Student at NJIT</p>
-    <p>Download my resume below:</p>
-    <a href="MansiSangani_Resume.pdf" class="button" download>📄 Download Resume (PDF)</a>
+    <p><strong>Web Development | Information Technology Major at NJIT</strong></p>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I’m an aspiring web developer currently pursuing a degree in Information Technology at NJIT. I'm passionate about building responsive websites and learning new technologies that solve real-world problems.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Bootstrap</li>
+        <li>Responsive Web Design</li>
+        <li>Git & GitHub</li>
+        <li>Node.js (basic), SQL (basic)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/yourusername/weather-app">Weather App</a> – A simple weather search tool using OpenWeather API.</li>
+        <li><a href="https://github.com/yourusername/portfolio-site">Portfolio Website</a> – This personal site showcasing my work.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Resume</h2>
+      <p>Download my resume below:</p>
+      <a href="MansiSangani_Resume.pdf" class="button" download>📄 Download Resume (PDF)</a>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>
+        📧 <a href="mailto:sanganimansi18@gmail.com">sanganimansi18@gmail.com</a><br/>
+        💼 <a href="https://linkedin.com/in/your-link">LinkedIn</a> |
+        💻 <a href="https://github.com/yourusername">GitHub</a>
+      </p>
+    </div>
   </div>
 </body>
 </html>
