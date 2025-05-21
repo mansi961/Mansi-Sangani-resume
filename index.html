@@ -2,45 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mansi Sangani | IT Student</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mansi Sangani | IT Professional Profile</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Mansi Sangani" class="profile-pic" />
-    <h1>Mansi Sangani</h1>
-    <p>Information Technology Major | 3rd Year at NJIT | GPA: 3.0</p>
+    <div class="hero">
+      <img src="your-photo.jpg" alt="Mansi Sangani" class="profile-photo" />
+      <h1>Mansi Sangani</h1>
+      <p class="tagline">Future IT Specialist | Passionate about Web Development & Tech Solutions</p>
+      <p>Information Technology Major | 3rd Year Student at NJIT | GPA: 3.0</p>
+    </div>
+    <nav>
+      <ul class="nav-tabs">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
   <main>
     <section id="about">
       <h2>About Me</h2>
-      <p>I’m a third-year Information Technology student at NJIT. I love building web apps and exploring how tech can solve real-world problems. I'm skilled in HTML, CSS, JavaScript, React, Git, and more.</p>
+      <p>I chose Information Technology because I am fascinated by how technology shapes our world. My interests include web development, databases, and cybersecurity. I am a quick learner and a team player, always eager to solve problems and contribute effectively.</p>
+      <p>Through my studies at NJIT, I have developed a strong foundation in IT fundamentals and gained hands-on experience building responsive web applications. I am excited to apply my skills in a professional environment and continue growing as a developer.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, SQL</li>
+        <li><strong>Frameworks & Tools:</strong> React, Node.js (basic), Bootstrap, Git & GitHub</li>
+        <li><strong>Other Skills:</strong> Responsive Design, Debugging, Communication, Agile Basics</li>
+      </ul>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Weather App:</strong> A weather app using the OpenWeather API.</li>
-        <li><strong>Portfolio Site:</strong> A personal portfolio built with HTML, CSS, and JavaScript.</li>
+      <ul class="projects-list">
+        <li>
+          <strong>Weather App</strong> – <a href="https://github.com/yourusername/weather-app" target="_blank" rel="noopener">GitHub Repo</a><br />
+          A web app that shows live weather data using the OpenWeather API, built with HTML, CSS, and JavaScript.
+        </li>
+        <li>
+          <strong>Portfolio Site</strong> – <a href="https://github.com/yourusername/portfolio-site" target="_blank" rel="noopener">GitHub Repo</a><br />
+          My personal portfolio website showcasing my projects and skills.
+        </li>
       </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="MansiSangani_Resume.pdf" download>📄 Download My Resume (PDF)</a></p>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sanganimansi18@gmail.com">sanganimansi18@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/your-link">linkedin.com/in/your-link</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/your-link" target="_blank" rel="noopener">linkedin.com/in/your-link</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
     </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Mansi Sangani</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 </html>
