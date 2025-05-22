@@ -1,49 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mansi Sangani | Projects</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <h1>Mansi Sangani</h1>
-    <p class="tagline">Web Development</p>
-    <nav>
-      <ul class="nav-tabs">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+<section id="projects">
+  <h2>Projects</h2>
 
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul class="projects-list">
-        <li>
-          <h3>Software Development Projects</h3>
-          <ul>
-            <li>Spearheaded tool development integrating GitHub to provide instant feedback on code changes, improving team cooperation by 30%</li>
-            <li>Leveraged Java and APIs to automate satellite data retrieval, reducing processing time by 40% and improving accuracy</li>
-            <li>Engineered parser and translator for MCL language, enhancing compilation speed and software development efficiency by 30%</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Lexical & Syntax Analyzer:</strong> Developed in C++, improving code analysis efficiency by 30% and reducing compilation errors by 20%.
-        </li>
-        <li>
-          <strong>Website Project:</strong> Educational Resources for Visitors<br />
-          <strong>Technologies:</strong> HTML5, CSS3, Bootstrap 5, GitHub, Git, Responsive Design
-        </li>
-      </ul>
-    </section>
-  </main>
+  <div class="tab-buttons">
+    <button class="tab-link active" onclick="openTab(event, 'software')">Software Development</button>
+    <button class="tab-link" onclick="openTab(event, 'analyzers')">Analyzers</button>
+    <button class="tab-link" onclick="openTab(event, 'web')">Web Projects</button>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Mansi Sangani</p>
-  </footer>
-</body>
-</html>
+  <div id="software" class="tab-content" style="display: block;">
+    <ul>
+      <li>Spearheaded tool development integrating GitHub to provide instant feedback on code changes, improving team cooperation by 30%</li>
+      <li>Leveraged Java and APIs to automate satellite data retrieval, reducing processing time by 40%</li>
+      <li>Engineered parser and translator for MCL language, enhancing compilation speed by 30%</li>
+    </ul>
+  </div>
 
+  <div id="analyzers" class="tab-content">
+    <ul>
+      <li><strong>Lexical & Syntax Analyzer:</strong> Developed in C++ to improve code analysis efficiency by 30% and reduce errors by 20%</li>
+    </ul>
+  </div>
+
+  <div id="web" class="tab-content">
+    <ul>
+      <li><strong>Website Project:</strong> Educational Resources for Visitors</li>
+      <li><strong>Technologies:</strong> HTML5, CSS3, Bootstrap 5, GitHub, Git, Responsive Design</li>
+    </ul>
+  </div>
+</section>
