@@ -148,4 +148,13 @@ footer {
   background: #f9f9f9;
   border-radius: 0 0 5px 5px;
 }
+.profile-section {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('images/background.jpg') center center/cover no-repeat;
+  color: white;
+}
+
 
