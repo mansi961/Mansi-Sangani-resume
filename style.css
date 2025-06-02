@@ -51,12 +51,13 @@ nav {
   font-weight: 600;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-tabs a:hover,
 .nav-tabs a:focus {
   background-color: #003d99;
+  transform: scale(1.05);
 }
 
 main {
