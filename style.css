@@ -71,9 +71,11 @@ main {
 
 h2 {
   color: #66aaff;
-  border-bottom: 2px solid #66aaff;
-  padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #66aaff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .skills-list,
