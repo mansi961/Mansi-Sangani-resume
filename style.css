@@ -115,14 +115,13 @@ footer {
 }
 
 .tab-link {
-  background-color: #333;
-  border: none;
-  padding: 10px 20px;
-  margin-right: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px 5px 0 0;
-  color: white;
+  background-color: #2a2a2a;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tab-link:hover {
+  background-color: #444;
+  transform: translateY(-2px);
 }
 
 .tab-link.active {
